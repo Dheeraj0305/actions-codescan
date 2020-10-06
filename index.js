@@ -1,6 +1,6 @@
 
 function click_btn(id){
-    var button = document.getElementById(id)
+    var button = document.tElementById(id)
     document.getElementById("temp").innerHTML = button.innerHTML
 }
 
@@ -78,7 +78,7 @@ class Clock{
         this.set_timmer()
     }
 
-    set_timmer(){
+    set_tier(){
         this.elem.innerHTML = this.secs
     }
 
@@ -95,7 +95,7 @@ class Clock{
     }
 }
 
-class Player extends Clock{
+class Pr extends Clock{
     constructor(player_num, player_intv, color){
         super("player_" + player_num, player_intv)
         this.player = "player_" + player_num
