@@ -14,8 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     env:    # The variables to set for your project and organization
       codescan_org: 5f348e5e0af2540037851a6d
-      codescan_project_key: Dheeraj0305-SumItUp
-      codescan_token: ${{ secrets.git_code_scan }}
+      codescan_project_key: Dheeraj0305-actions-codescan
+      codescan_token: ${{ secrets.actions1 }}
     steps:
     - uses: actions/checkout@v1
     - uses: actions/setup-node@v1.1.0
@@ -23,8 +23,8 @@ jobs:
     - uses: codescan-io/codescan-scanner-action@1.2
       with:
         organization: 5f348e5e0af2540037851a6d
-        projectKey: Dheeraj0305-SumItUp
-        login: ${{ secrets.git_code_scan }}
+        projectKey: Dheeraj0305-actions-codescan
+        login: ${{ secrets.actions1 }}
     # CodeScanCloud endpoint for your project
         codeScanUrl: # optional, default is https://app.codescan.io/
     # This task will poll CodeScanCloud until the analysis is completed, or until the timeout is reached
