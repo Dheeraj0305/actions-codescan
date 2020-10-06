@@ -6,7 +6,7 @@ function click_btn(id){
 
 function disable_btn(num, player, color){
     var grid_elem = document.getElementById("game_id").children;
-    for(var idx = 0; idx<grid_elem.length; idx++){
+    for(var idx = 0; idx<grid.length; idx++){
         if(grid_elem[idx].innerHTML == num){
             grid_elem[idx].disabled = true;
             grid_elem[idx].style.backgroundColor = color
