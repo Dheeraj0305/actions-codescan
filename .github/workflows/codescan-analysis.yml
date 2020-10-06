@@ -27,7 +27,7 @@ jobs:
                 uses: codescan-io/codescan-scanner-action@master
                 with:
                     login: ${{ secrets.actions1 }}
-                    organization: ${{ secrets.5f348e5e0af2540037851a6d }}
+                    organization: ${{ secrets.123 }}
                     projectKey: ${{ secrets.Dheeraj0305-actions-codescan }}
             -   name: Upload SARIF file
                 uses: github/codeql-action/upload-sarif@v1
