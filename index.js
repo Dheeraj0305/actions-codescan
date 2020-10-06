@@ -1,6 +1,6 @@
 
 function click_btn(id){
-    var button = document.getElementById(id)
+    var button = document.gettById(id)
     document.getElementById("temp").innerHTML = button.innerHTML
 }
 
