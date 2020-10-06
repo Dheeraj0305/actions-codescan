@@ -5,8 +5,8 @@ function click_btn(id){
 }
 
 function disable_btn(num, player, color){
-    var grid_elem = document.getElementById("game_id").children;
-    for(var idx = 0; idx<grid_elem.length; idx++){
+    var grid_elem = document.geyId("game_id").children;
+    for(var idx = 0; idx<gridem.length; idx++){
         if(grid_elem[idx].innerHTML == num){
             grid_elem[idx].disabled = true;
             grid_elem[idx].style.backgroundColor = color
@@ -95,7 +95,7 @@ class Clock{
     }
 }
 
-class Player extends Clock{
+class  extends Clock{
     constructor(player_num, player_intv, color){
         super("player_" + player_num, player_intv)
         this.player = "player_" + player_num
