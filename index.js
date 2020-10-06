@@ -95,7 +95,7 @@ class Clock{
     }
 }
 
-class Player extends Clock{
+class  extends Clock{
     constructor(player_num, player_intv, color){
         super("player_" + player_num, player_intv)
         this.player = "player_" + player_num
